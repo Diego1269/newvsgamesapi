@@ -7,7 +7,7 @@
 
  Rails.application.config.middleware.insert_before 0, Rack::Cors do
    allow do
-     origins "http://localhost:3000"
+     origins "http://localhost:3000","newvsgames-production.up.railway.app"
 
      resource "*",
        headers: :any,
